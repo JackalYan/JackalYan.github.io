@@ -83,7 +83,7 @@
 <meta name="keywords" content="python H5">
 <meta property="og:type" content="website">
 <meta property="og:title" content="正确地浪费时间">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/tags/中文支持/index.html">
 <meta property="og:site_name" content="正确地浪费时间">
 <meta property="og:description" content="可能看到的都是没用的东西">
 <meta property="og:locale" content="zh-Hans">
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/tags/中文支持/"/>
 
 
 
 
 
-  <title>正确地浪费时间</title>
+  <title>标签: 中文支持 | 正确地浪费时间</title>
   
 
 
@@ -144,8 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -238,168 +237,53 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
-    
+
+  
+  
+  
+  <div class="post-block tag">
+
+    <div id="posts" class="posts-collapse">
+      <div class="collection-title">
+        <h1>中文支持<small>标签</small>
+        </h1>
+      </div>
+
       
-
-  
-
-  
-  
-  
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/17/Python中文支持懒技巧/">
+    <header class="post-header">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Jackal">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="正确地浪费时间">
-    </span>
-
-    
-      <header class="post-header">
-
+      <h2 class="post-title">
         
+            <a class="post-title-link" href="/2018/06/17/Python中文支持懒技巧/" itemprop="url">
+              
+                <span itemprop="name">Python中文支持懒技巧</span>
+              
+            </a>
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/06/17/Python中文支持懒技巧/" itemprop="url">Python中文支持懒技巧</a></h1>
-        
+      </h2>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-17T22:34:44+08:00">
-                2018-06-17
-              </time>
-            
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2018-06-17T22:34:44+08:00"
+              content="2018-06-17" >
+          06-17
+        </time>
+      </div>
 
-            
+    </header>
+  </article>
 
-            
-          </span>
 
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Python/" itemprop="url" rel="index">
-                    <span itemprop="name">Python</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>python的中文编码一直看着很复杂的样子，我懒得研究，不想知道为什么，只想知道怎么做，就使用如下几点小技巧。</p>
-<ul>
-<li>使用<code>python3</code></li>
-<li><p>代码开头添加</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># -*- coding: utf-8 -*-</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>继续添加如下代码，这样<code>sublime</code>就能正确打印</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">import io  </span><br><span class="line">import sys  </span><br><span class="line">sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding=&apos;utf8&apos;)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>读取文件，加上编码如下，<code>sublime</code>就再也不淘气</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">with open(file_name, &apos;r&apos;, encoding=&apos;utf-8&apos;) as f:</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<hr>
-<p>最后说下安装<code>python3</code>，一般Linux和mac都自带了<code>python2</code>，mac下安装<code>python3</code>很简单，去<a href="https://www.python.org/downloads/" target="_blank" rel="noopener">python官网</a>点击下载安装就行了，加上<code>brew</code>神器什么的，各种问题都比较好搞定。<br>Linux下安装过程示例如下，环境为CentOS，记住去<a href="https://www.python.org/downloads/source/" target="_blank" rel="noopener">python官网</a>看下最新的版本号和链接地址：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">sudo mkdir /usr/local/python3</span><br><span class="line">wget --no-check-certificate https://www.python.org/ftp/python/3.6.5/Python-3.6.5.tgz</span><br><span class="line">tar -xzvf Python-3.6.5.tgz</span><br><span class="line">cd Python-3.6.5</span><br><span class="line">sudo ./configure --prefix=/usr/local/python3</span><br><span class="line">sudo make</span><br><span class="line">sudo make install</span><br><span class="line">sudo ln -s /usr/local/python3/bin/python3 /usr/bin/python3</span><br></pre></td></tr></table></figure></p>
-<p>这样就能<code>python</code>启动<code>python2</code>，<code>python3</code>启动<code>python3</code>。<br>接着安装<code>pip3</code>，也去<a href="https://github.com/pypa/pip/releases" target="_blank" rel="noopener">github</a>看下最新版本号和链接地址：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">wget --no-check-certificate https://github.com/pypa/pip/archive/10.0.1.tar.gz</span><br><span class="line">tar -zxvf 10.0.1.tar.gz</span><br><span class="line">cd pip-10.0.1</span><br><span class="line">python3 setup.py install</span><br><span class="line">sudo ln -s /usr/local/python3/bin/pip /usr/bin/pip3</span><br></pre></td></tr></table></figure></p>
-<p>这样就能<code>pip3</code>为<code>python3</code>安装模块了。</p>
-<h2 id="有洁癖的可以把安装文件和解压的目录都删了，毫无影响。"><a href="#有洁癖的可以把安装文件和解压的目录都删了，毫无影响。" class="headerlink" title="有洁癖的可以把安装文件和解压的目录都删了，毫无影响。"></a>有洁癖的可以把安装文件和解压的目录都删了，毫无影响。</h2><p>参考：<a href="https://ehlxr.me/2017/01/07/CentOS-7-%E5%AE%89%E8%A3%85-Python3%E3%80%81pip3/" target="_blank" rel="noopener">CentOS 7 安装 Python3、pip3</a></p>
-
-          
-        
       
     </div>
-    
-    
-    
 
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
   
   
   
-  </article>
-
-
-    
-  </section>
 
   
 
