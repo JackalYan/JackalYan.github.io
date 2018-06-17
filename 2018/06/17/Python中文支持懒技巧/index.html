@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="正确地浪费时间">
 <meta property="og:description" content="python的中文编码一直看着很复杂的样子，我懒得研究，不想知道为什么，只想知道怎么做，就使用如下几点小技巧。  使用python3 代码开头添加 1# -*- coding: utf-8 -*-  继续添加如下代码，这样sublime就能正确打印 123import io  import sys  sys.stdout = io.TextIOWrapper(sys.stdout.buffer,">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-17T14:47:09.623Z">
+<meta property="og:updated_time" content="2018-06-17T14:58:54.510Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python中文支持懒技巧">
 <meta name="twitter:description" content="python的中文编码一直看着很复杂的样子，我懒得研究，不想知道为什么，只想知道怎么做，就使用如下几点小技巧。  使用python3 代码开头添加 1# -*- coding: utf-8 -*-  继续添加如下代码，这样sublime就能正确打印 123import io  import sys  sys.stdout = io.TextIOWrapper(sys.stdout.buffer,">
@@ -358,8 +358,9 @@
 <hr>
 <p>最后说下安装<code>python3</code>，一般Linux和mac都自带了<code>python2</code>，mac下安装<code>python3</code>很简单，去<a href="https://www.python.org/downloads/" target="_blank" rel="noopener">python官网</a>点击下载安装就行了，加上<code>brew</code>神器什么的，各种问题都比较好搞定。<br>Linux下安装过程示例如下，环境为CentOS，记住去<a href="https://www.python.org/downloads/source/" target="_blank" rel="noopener">python官网</a>看下最新的版本号和链接地址：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">sudo mkdir /usr/local/python3</span><br><span class="line">wget --no-check-certificate https://www.python.org/ftp/python/3.6.5/Python-3.6.5.tgz</span><br><span class="line">tar -xzvf Python-3.6.5.tgz</span><br><span class="line">cd Python-3.6.5</span><br><span class="line">sudo ./configure --prefix=/usr/local/python3</span><br><span class="line">sudo make</span><br><span class="line">sudo make install</span><br><span class="line">sudo ln -s /usr/local/python3/bin/python3 /usr/bin/python3</span><br></pre></td></tr></table></figure></p>
 <p>这样就能<code>python</code>启动<code>python2</code>，<code>python3</code>启动<code>python3</code>。<br>接着安装<code>pip3</code>，也去<a href="https://github.com/pypa/pip/releases" target="_blank" rel="noopener">github</a>看下最新版本号和链接地址：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">wget --no-check-certificate https://github.com/pypa/pip/archive/10.0.1.tar.gz</span><br><span class="line">tar -zxvf 10.0.1.tar.gz</span><br><span class="line">cd pip-10.0.1</span><br><span class="line">python3 setup.py install</span><br><span class="line">sudo ln -s /usr/local/python3/bin/pip /usr/bin/pip3</span><br></pre></td></tr></table></figure></p>
-<p>这样就能<code>pip3</code>为<code>python3</code>安装模块了。</p>
-<h2 id="有洁癖的可以把安装文件和解压的目录都删了，毫无影响。"><a href="#有洁癖的可以把安装文件和解压的目录都删了，毫无影响。" class="headerlink" title="有洁癖的可以把安装文件和解压的目录都删了，毫无影响。"></a>有洁癖的可以把安装文件和解压的目录都删了，毫无影响。</h2><p>参考：<a href="https://ehlxr.me/2017/01/07/CentOS-7-%E5%AE%89%E8%A3%85-Python3%E3%80%81pip3/" target="_blank" rel="noopener">CentOS 7 安装 Python3、pip3</a></p>
+<p>这样就能<code>pip3</code>为<code>python3</code>安装模块了。<br>有洁癖的可以把安装文件和解压的目录都删了，毫无影响。</p>
+<hr>
+<p>参考：<a href="https://ehlxr.me/2017/01/07/CentOS-7-%E5%AE%89%E8%A3%85-Python3%E3%80%81pip3/" target="_blank" rel="noopener">CentOS 7 安装 Python3、pip3</a></p>
 
       
     </div>
@@ -460,17 +461,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -531,22 +523,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#有洁癖的可以把安装文件和解压的目录都删了，毫无影响。"><span class="nav-number">1.</span> <span class="nav-text">有洁癖的可以把安装文件和解压的目录都删了，毫无影响。</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
@@ -626,9 +602,10 @@
   
 
 
+
+
   
-
-
+  
 
 
 
@@ -670,7 +647,12 @@
 
   
   
-    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
   
 
 
